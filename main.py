@@ -38,6 +38,82 @@ def block_card():
 def card_no():
     return render_template("card_no.html")
 
+@app.route("/cash_tranfer")
+def cash_tranfer():
+    return render_template("cash_tranfer.html")
+
+@app.route("/cash_withdrawal")
+def cash_withdrawal():
+    return render_template("cash_withdrawal.html")
+
+@app.route("/history")
+def history():
+    return render_template("history.html")
+
+@app.route("/index")
+def index():
+    return render_template("index.html")
+
+@app.route("/main")
+def main():
+    return render_template("main.html")
+
+@app.route("/options")
+def options():
+    return render_template("options.html")
+
+@app.route("/passcode")
+def passcode():
+    return render_template("passcode.html")
+
+@app.route("/phone_change")
+def phone_change():
+    return render_template("phone_change.html")
+
+@app.route("/pin_change")
+def pin_change():
+    return render_template("pin_change.html")
+
+@app.route("/pincode")
+def pincode():
+    return render_template("pincode.html")
+
+@app.route("/reset_phone")
+def reset_phone():
+    return render_template("reset_phone.html")
+
+@app.route("/reset_pin")
+def reset_pin():
+    return render_template("reset_pin.html")
+
+@app.route("/services")
+def services():
+    return render_template("services.html")
+
+@app.route("/update_card_details")
+def update_card_details():
+    return render_template("update_card_details.html")
+
+@app.route("/update_expiringdate")
+def update_expiringdate():
+    return render_template("update_expiringdate.html")
+
+@app.route("/user_login")
+def user_login():
+    return render_template("user_login.html")
+
+@app.route("/view_Atm_status")
+def view_Atm_status():
+    return render_template("view_Atm_status.html")
+
+@app.route("/view_history")
+def view_history():
+    return render_template("view_history.html")
+
+@app.route("/")
+def hello():
+    return render_template("welcome.html")
+
 # Reads UserAccounts.txt to put all account info into User.accounts
 def readFile():
   txt_file = open("UserAccounts.txt", "r")
