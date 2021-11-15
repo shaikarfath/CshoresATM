@@ -7,6 +7,36 @@ import User
 import Admin
 from Admin import Admin as ADMIN
 from ATM_MACHINE import ATM_Machine
+from flask import Flask, render_template, request
+app = Flask(__name__)
+
+@app.route("/activate_card")
+def activate_card():
+    return render_template("activate_card.html")
+
+@app.route("/add_atm")
+def add_atm():
+    return render_template("add_atm.html")
+
+@app.route("/admin_login")
+def admin_login():
+    return render_template("admin_login.html")
+
+@app.route("/atm_status")
+def atm_status():
+    return render_template("atm_status.html")
+
+@app.route("/balance")
+def balance():
+    return render_template("balance.html")
+
+@app.route("/block_card")
+def block_card():
+    return render_template("block_card.html")
+
+@app.route("/card_no")
+def card_no():
+    return render_template("card_no.html")
 
 # Reads UserAccounts.txt to put all account info into User.accounts
 def readFile():
@@ -75,4 +105,4 @@ def main():
   parser(machine)
 
 if __name__ == "__main__":
-  main()
+  app.run(debug=True)
