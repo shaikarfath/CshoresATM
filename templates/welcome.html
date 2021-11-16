@@ -129,10 +129,9 @@ span.psw {
 
 <h2>Welcome to the Cshores ATM!</h2>
 
-<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">ADMIN</button>
+<a class="nav-link active" href="{{ url_for('admin_login') }}"><h3>ADMIN</h3></a>
 
-<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">USER</button>
-
+<a class="nav-link active" href="{{ url_for('user_login') }}"><h3>USER</h3></a>
 <script>
 // Get the modal
 var modal = document.getElementById('id01');

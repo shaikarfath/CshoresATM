@@ -54,9 +54,9 @@ def history():
 def index():
     return render_template("index.html")
 
-@app.route("/main")
-def main():
-    return render_template("main.html")
+@app.route("/admin_main")
+def admin_main():
+    return render_template("admin_main.html")
 
 @app.route("/options")
 def options():
