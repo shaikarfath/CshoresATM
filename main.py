@@ -114,6 +114,8 @@ def view_history():
 def hello():
     return render_template("welcome.html")
 
+
+
 # Reads UserAccounts.txt to put all account info into User.accounts
 def readFile():
   txt_file = open("UserAccounts.txt", "r")
